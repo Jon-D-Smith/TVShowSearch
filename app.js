@@ -7,6 +7,7 @@ form.addEventListener('submit', async (e) => {
     const config = {params: {q: searchTerm}}
     const res = await axios.get(`http://api.tvmaze.com/search/shows`, config);
     console.log(res.data[0].show);
+    container.innerHTML = "";
     makeShowCards(res.data)
     form.elements.query.value = '';
 })
