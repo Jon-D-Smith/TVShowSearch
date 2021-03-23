@@ -35,10 +35,11 @@ const makeShowCards = (shows) => {
             p.textContent = 'There is no image for this show'
             div.append(p)
         }
-
+        //Create a summary Element
         const summary = document.createElement('span')
         summary.classList.add('summary')
         summary.append("Summary:")
+        //Truncate the summary to 'X' characters
         if (result.show.summary != null && result.show.summary != undefined) {
             let sumArr = result.show.summary.split("");
             let newSum = [];
@@ -59,8 +60,9 @@ const makeShowCards = (shows) => {
         }
 
 
-
+        //Genres
         summary.innerHTML += "<p>Genres: </p>"
+        //Loop through the potential genres sent from the API
         if (result.show.genres.length > 0) {
             for (let i = 0; i < result.show.genres.length; i++) {
                 summary.innerHTML += result.show.genres[i]
