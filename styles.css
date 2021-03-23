@@ -1,48 +1,64 @@
 body {
-    background-color: bisque;
-}
-
-#container {
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.show {
-    width: 350px;
-    height: 500px;
-    margin: 10px;
-    background-color: rgb(240, 230, 243);
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.title {
-   width: 100% ;
-   text-align:center;
-}
-
-img {
+    background-color: rgb(72, 74, 71);
+    padding: 0;
     margin: 0;
-    width: 280px;
-    height: 320px;
-}
-
-#Page-Title {
-    font-family: 'Estele', sans-serif;
+  }
+  
+  #container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+  }
+  
+  .show {
+    font-family: "pookie", sans-serif;
+    font-size: 20px;
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-color: rgb(241, 230, 124);
+    border: 1px solid rgba(72, 74, 71);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(250, 235, 96, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: rgb(72, 74, 71);
+  }
+  
+  .show h1 {
+    height: 5%;
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  
+  img {
+    margin: 0;
+    width: 200px;
+    height: 160px;
+  }
+  
+  #Page-Title {
+    font-family: "Estele", sans-serif;
     text-align: center;
     font-size: 50px;
     height: 300px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(88, 200, 219);
     margin: 0;
     padding: 50px;
-                                                
-}
+    color: rgb(72, 74, 71);
+  }
+  
+  .summary {
+    font-family: "Gravity", sans-serif;
+  
+    padding: 5%;
+    font-size: 16px;
+  }
