@@ -39,7 +39,27 @@ const makeShowCards = (shows) => {
         const summary = document.createElement('span')
         summary.classList.add('summary')
         summary.append("Summary:")
-        summary.innerHTML += result.show.summary;
+        if (result.show.summary != null && result.show.summary != undefined) {
+            let sumArr = result.show.summary.split("");
+            let newSum = [];
+            if (sumArr.length > 200) {
+                for (let i = 0; i < 200; i++) {
+
+                    newSum += sumArr[i]
+                }
+                summary.innerHTML += newSum + "...</p>";
+            } else {
+                for (let i = 0; i < sumArr.length; i++) {
+                    newSum += sumArr[i]
+                }
+                summary.innerHTML += newSum + "</p>";
+            }
+
+
+        }
+
+
+
         summary.innerHTML += "<p>Genres: </p>"
         if (result.show.genres.length > 0) {
             for (let i = 0; i < result.show.genres.length; i++) {

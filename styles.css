@@ -16,6 +16,7 @@ body {
   .show {
     font-family: "pookie", sans-serif;
     font-size: 20px;
+    
     width: 450px;
     height: 650px;
     margin: 10px;
@@ -27,11 +28,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     color: rgb(72, 74, 71);
+    text-align: left;
   }
   
   .show h1 {
     height: 5%;
   }
+
   
   .title {
     width: 100%;
@@ -58,7 +61,7 @@ body {
   
   .summary {
     font-family: "Gravity", sans-serif;
-  
     padding: 5%;
     font-size: 16px;
+    
   }
