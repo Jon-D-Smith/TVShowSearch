@@ -45,6 +45,7 @@ body {
     margin: 0;
     width: 200px;
     height: 160px;
+    display: block;
   }
   
   #Page-Title {
@@ -63,5 +64,5 @@ body {
     font-family: "Gravity", sans-serif;
     padding: 5%;
     font-size: 16px;
-    
+    display:block;
   }

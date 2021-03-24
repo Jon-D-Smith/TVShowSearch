@@ -49,6 +49,8 @@ const makeShowCards = (shows) => {
                     newSum += sumArr[i]
                 }
                 summary.innerHTML += newSum + "...</p>";
+            } else if (sumArr.length == 0) {
+                summary.innerHTML += "No summary provided"
             } else {
                 for (let i = 0; i < sumArr.length; i++) {
                     newSum += sumArr[i]
