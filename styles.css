@@ -62,7 +62,15 @@ body {
   
   .summary {
     font-family: "Gravity", sans-serif;
-    padding: 5%;
+    width: 90%;
+    text-align: left;
     font-size: 16px;
-    display:block;
+    
+  }
+
+  .genres{
+    font-family: "Gravity", sans-serif;
+    width: 90%;
+    text-align: left;
+    font-size: 16px;
   }

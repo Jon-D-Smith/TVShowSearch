@@ -50,7 +50,8 @@ const makeShowCards = (shows) => {
                 }
                 summary.innerHTML += newSum + "...</p>";
             } else if (sumArr.length == 0) {
-                summary.innerHTML += "No summary provided"
+
+                summary.innerHTML += "<p>No summary provided</p>"
             } else {
                 for (let i = 0; i < sumArr.length; i++) {
                     newSum += sumArr[i]
@@ -63,23 +64,25 @@ const makeShowCards = (shows) => {
 
 
         //Genres
-        summary.innerHTML += "<p>Genres: </p>"
+        let genreDiv = document.createElement('div')
+        genreDiv.classList.add('genres')
+        genreDiv.innerHTML += "<p>Genres: </p>"
         //Loop through the potential genres sent from the API
         if (result.show.genres.length > 0) {
             for (let i = 0; i < result.show.genres.length; i++) {
-                summary.innerHTML += result.show.genres[i]
+                genreDiv.innerHTML += result.show.genres[i]
                 if (i < result.show.genres.length - 1) {
-                    summary.innerHTML += ", "
+                    genreDiv.innerHTML += ", "
                 }
 
             }
         } else {
-            summary.innerHTML += "N/A"
+            genreDiv.innerHTML += "N/A"
         }
 
 
         div.append(summary);
-
+        div.append(genreDiv);
         container.append(div)
     }
 
