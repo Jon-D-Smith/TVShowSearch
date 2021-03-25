@@ -90,6 +90,9 @@ const makeShowCards = (shows) => {
         div.append(summary);
         div.append(genreDiv);
         if (result.show.officialSite != null) {
+            let learnMore = document.createElement('p')
+            learnMore.textContent = "Learn More: "
+            div.append(learnMore)
             a.href = result.show.officialSite
             div.append(a);
         } else {
