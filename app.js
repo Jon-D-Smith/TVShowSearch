@@ -14,12 +14,9 @@ form.addEventListener('submit', async (e) => {
 
 const makeShowCards = (shows) => {
     for (let result of shows) {
-        let a = document.createElement('a')
+        // let a = document.createElement('a')
+        // a.textContent = `${result.show.name}`
 
-
-
-        a.textContent = `${result.show.name}`
-        console.log(a)
         //Create a container div
         const div = document.createElement('div');
         div.classList.add('show')
@@ -89,17 +86,17 @@ const makeShowCards = (shows) => {
 
         div.append(summary);
         div.append(genreDiv);
-        if (result.show.officialSite != null) {
-            let learnMore = document.createElement('p')
-            learnMore.textContent = "Learn More: "
-            div.append(learnMore)
-            a.href = result.show.officialSite
-            div.append(a);
-        } else {
-            let noLink = document.createElement('p')
-            noLink.textContent = "No external site available";
-            div.append(noLink)
-        }
+        // if (result.show.officialSite != null) {
+        //     let learnMore = document.createElement('p')
+        //     learnMore.textContent = "Learn More: "
+        //     div.append(learnMore)
+        //     a.href = result.show.officialSite
+        //     div.append(a);
+        // } else {
+        //     let noLink = document.createElement('p')
+        //     noLink.textContent = "No external site available";
+        //     div.append(noLink)
+        // }
 
         container.append(div)
     }
